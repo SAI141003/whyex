@@ -286,9 +286,8 @@ def test_init_installs_shell_hook(monkeypatch):
     assert "# why shell integration" in rc_content, "rc missing marker"
 
     subprocess.run(["bash", "-n", hook], check=True)
-    if subprocess.run(["command", "-v", "zsh"],
-                      stdout=subprocess.DEVNULL,
-                      stderr=subprocess.DEVNULL).returncode == 0:
+    import shutil
+    if shutil.which("zsh"):
         subprocess.run(["zsh", "-n", hook], check=True)
 
 
