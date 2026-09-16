@@ -35,5 +35,8 @@ Issues = "https://github.com/SAI141003/whyex/issues"
 [project.scripts]
 whyex = "why:main"
 
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
 [tool.setuptools]
 py-modules = ["why", "rules", "contrib_rules"]
