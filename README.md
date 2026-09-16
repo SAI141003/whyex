@@ -1,6 +1,6 @@
 # whyex
 
-**Explain any terminal error offline — and show how to fix it.**
+**Explain any terminal error offline and show how to fix it.**
 
 `whyex` reads an error from your terminal and tells you, in plain English:
 
