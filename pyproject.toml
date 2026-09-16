@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whyex"
+version = "0.1.0"
+description = "Explain the last error and show how to fix it - offline, language-agnostic."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+  { name = "Sai Koushik Yaganti", email = "saiyaganti14@gmail.com" }
+]
+keywords = ["cli", "errors", "debug", "diagnostics", "developer-tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+[project.urls]
+Homepage = "https://github.com/SAI141003/whyex"
+Repository = "https://github.com/SAI141003/whyex"
+Issues = "https://github.com/SAI141003/whyex/issues"
+
+[project.scripts]
+whyex = "why:main"
+
+[tool.setuptools]
+py-modules = ["why", "rules", "contrib_rules"]
